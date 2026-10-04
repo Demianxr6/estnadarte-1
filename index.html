@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo de Sueldo y Bonificación</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>Cálculo de Sueldo de Empleado</h2>
+
+    <form id="sueldoForm">
+      <label for="horas">Horas Laboradas:</label>
+      <input type="number" id="horas" min="0" step="1" placeholder="Ej. 45" required>
+
+      <button type="submit">Calcular Sueldo</button>
+    </form>
+
+    <div id="resultado" class="resultado hidden">
+      <p><strong>Tarifa aplicada:</strong> S/. <span id="resTarifa"></span> / hora</p>
+      <p><strong>Sueldo Inicial:</strong> S/. <span id="resSueldoInicial"></span></p>
+      <p><strong>Bonificación (<span id="resPorcentajeBonif"></span>):</strong> S/. <span id="resBonificacion"></span></p>
+      <hr>
+      <p><strong>Total a Pagar:</strong> S/. <span id="resSueldoTotal" class="monto-total"></span></p>
+    </div>
+  </div>
+
+  <script src="uno.js"></script>
+</body>
+</html>
